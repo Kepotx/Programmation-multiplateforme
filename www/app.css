@@ -1,0 +1,60 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.valign-outer { height: 400px; border: 1px solid red; }
+.valign-inner { border: 1px solid blue; }
+.valign-outer { position: static; display: table; overflow: hidden; }
+.valign-middle { position: static; display: table-cell; vertical-align: middle; width: 100%; }
+.contentCentered {
+  text-align: center;
+}
+
+.contentCentered:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -.25em; /* Adjusts for spacing */
+}
+
+.contentCentered > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.header-cont {
+  width:100%;
+  position:fixed;
+  top:0px;
+  z-index: 1;
+}
+
+.panel-body {
+  margin: 70px auto;
+}
+
+img{
+  width:100%;
+}

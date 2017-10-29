@@ -1,0 +1,13 @@
+
+            <li class="list-group-item"> <h4>Sessions :</h4>
+                <input class="form-control" placeholder="Filtrer par titre" type="text" ng-model="searchText.title">
+                <session class="list-group-item" ng-repeat="session in sessions | orderBy: 'id' | filter: searchText "></session>
+            </li>
+
+<!--      template used for the ng-repeat in the session list        -->
+<script type="text/ng-template" id="session.html">
+    <a ng-href="#!/session/{{session.id}}">
+        {{session.title}}
+        <span class="pull-right glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+    </a>
+</script>

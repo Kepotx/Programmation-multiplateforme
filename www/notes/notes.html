@@ -1,0 +1,35 @@
+<div class="row ">
+    <div class="col-xs-3">
+        <button ng-click="getPicture()" type="button" class="btn btn-lg ">
+            <span class="glyphicon glyphicon-camera"></span>
+        </button>
+    </div>
+    <div class="col-xs-3">
+        <button ng-click="getPictureFromGallery()" type="button" class="btn btn-lg ">
+            <span class="glyphicon glyphicon-picture"></span>
+        </button>
+    </div>
+    <div class="col-xs-3">
+        <button ng-click="recordAudio()" type="button" class="btn btn-lg ">
+            <span class="glyphicon glyphicon-headphones"></span>
+        </button>
+    </div>
+    <div class="col-xs-3">
+        <button ng-click="recordVideo()" type="button" class="btn btn-lg ">
+            <span class="glyphicon glyphicon-facetime-video"></span>
+        </button>
+    </div>
+</div>
+<br>
+<div style="text-align: center;">
+    <button ng-click="enregistrer()" type="button" class="btn btn-primary btn-lg">Enregistrer</button>
+</div>
+<br>
+<textarea class="form-control" ng-model="notes.text" rows="10">
+</textarea>
+<img ng-click="share()" src="{{notes.photo}}"/>
+<!--
+<video width="480" height="320" controls="controls">
+    <source ng-src="{{notes.video}}" type="video/mp4">
+</video>
+-->
